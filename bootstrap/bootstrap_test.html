@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<title>[Bootstrap]MySample.</title>
+<!--incldue-->
+<link href="css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+body {
+	/*
+	padding-top: 40px;
+	*/
+}
+ #row1 > div
+,#row2 > div
+,#row3 > div
+{
+	background-color: #eee;
+	padding: 3px 0;
+	text-align: center;
+}
+.sidenav {
+	position: fixed;
+	left:0;
+	top:200px;
+	display: block;
+}
+</style>
+<script language="JavaScript" type="text/javascript">
+</script>
+</head>
+<body>
+	<div class="topbar" style="position:relative;">
+		<div class="topbar-inner" style="color: #fff;">
+			<div class="container">
+			<span class="brand">
+				MyTest
+			</span>
+			<ul class="nav">
+				<li class="active"><a href="#top">top</a></li>
+				<li><a href="#grid">grid</a></li>
+				<li><a href="#block">block,pre</a></li>
+				<li><a href="#lable">lable</a></li>
+				<li><a href="#table">table</a></li>
+				<li><a href="#buttons">buttons</a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+			</ul>
+			<div style="position:absolute;color:#fff;top:0;left:700px;z-index:10001;">
+				div.topbar > div.topbar-inner > div.container<br/>
+				<span style="padding-left:10px;">body { padding-top: 40px; }</span>
+			</div>
+		</div>
+	</div>
+	</div>
+	<h1 id="top">&lt;h1&gt;Bootstrap, from Twitter Sample.</h1>
+	site: <a href="http://twitter.github.com/bootstrap/">http://twitter.github.com/bootstrap/</a>
+	<div class="container" style="padding:20px 0;">
+		<h2 class="">&lt;h2&gt;div.container{style:padding:20px 0;}</h2>
+		<h3 id="grid">div.row > span1*16</h3>
+		<div class="row" id="row1">
+			<div class="span1">1</div>
+			<div class="span1">2</div>
+			<div class="span1">3</div>
+			<div class="span1">4</div>
+			<div class="span1">5</div>
+			<div class="span1">6</div>
+			<div class="span1">7</div>
+			<div class="span1">8</div>
+			<div class="span1">9</div>
+			<div class="span1">10</div>
+			<div class="span1">11</div>
+			<div class="span1">12</div>
+			<div class="span1">13</div>
+			<div class="span1">14</div>
+			<div class="span1">15</div>
+			<div class="span1">16</div>
+		</div>
+		
+		<h3>div.row > .span6, span10</h3>
+		<div class="row" id="row2">
+			<div class="span6">6</div>
+			<div class="span10">10</div>
+		</div>
+		
+		<h3>div.row > .span12 .offset4</h3>
+		<div class="row" id="row3">
+			<div class="span12 offset4">12</div>
+		</div>
+		
+		<h3 id="block">blockquote</h3>
+		<blockquote>
+			hello.<br/>my sample.
+			<small>1122</small>
+		</blockquote>
+		
+		<h3>pre</h3>
+		<pre>text.text</pre>
+		
+		<h3>code</h3>
+		<code>text. text</code>
+		
+		<h3 id="label">Lable</h3>
+		<span class="label">default</span>
+		<span class="label success">success</span>
+		<span class="label warning">warning</span>
+		<span class="label important">important</span>
+		<span class="label notice">notice</span>
+		
+		<h3 id="table">table</h3>
+		<h4>default</h4>
+		<table>
+			<thead>
+				<tr>
+					<td>#</td>
+					<td>aa</td>
+					<td>bb</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+			</tbody>
+		</table>
+		<h4>.bordered-table</h4>
+		<table class="bordered-table">
+			<thead>
+				<tr>
+					<td>#</td>
+					<td>aa</td>
+					<td>bb</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h4>.zebra-striped</h4>
+		<table class="zebra-striped">
+			<thead>
+				<tr>
+					<td>#</td>
+					<td>aa</td>
+					<td>bb</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h3 id="buttons">Buttons(.btn .primary)</h3>
+		<button type="button" class="btn">default</button>
+		<button type="button" class="btn primary">primary</button>
+		<button type="button" class="btn info">info</button>
+		<button type="button" class="btn success">success</button>
+		<button type="button" class="btn danger">danger</button>
+		
+		<h3>Tab (ul.tabs > li.active)</h3>
+		<ul class="tabs">
+		    <li class="active"><a href="#">Home</a></li>
+		    <li><a href="#">Profile</a></li>
+		    <li><a href="#">Messages</a></li>
+		    <li><a href="#">Settings</a></li>
+		    <li><a href="#">Contact</a></li>
+		</ul>
+		
+		<h3>pills (ul.pills > li.active)</h3>
+	    <ul class="pills">
+		    <li class="active"><a href="#">Home</a></li>
+		    <li><a href="#">Profile</a></li>
+		    <li><a href="#">Messages</a></li>
+		    <li><a href="#">Settings</a></li>
+		    <li><a href="#">Contact</a></li>
+	    </ul>
+	    
+	    <h3>breadcrumb(ul.breadcrumb li.active)</h3>
+	    <ul class="breadcrumb">
+		    <li><a href="#">Home</a> <span class="divider">/</span></li>
+		    <li><a href="#">Middle page</a> <span class="divider">/</span></li>
+		    <li><a href="#">Another one</a> <span class="divider">/</span></li>
+		    <li class="active">You are here</li>
+	    </ul>
+	    
+	    <h3>paging(div.pagination)</h3>
+	    (ul>li.prev .disabled, li.active ... , li.next)
+	    <div class="pagination">
+		    <ul>
+			    <li class="prev disabled"><a href="#">&larr; Previous</a></li>
+			    <li class="active"><a href="#">1</a></li>
+			    <li><a href="#">2</a></li>
+			    <li><a href="#">3</a></li>
+			    <li><a href="#">4</a></li>
+			    <li><a href="#">5</a></li>
+			    <li class="next"><a href="#">Next &rarr;</a></li>
+		    </ul>
+	    </div>
+	    
+	    <h3>Alerts(div.alert-message .warning)</h3>
+	    <div class="alert-message warning">
+		    <a class="close" href="#">Å~</a>
+		    <p><strong>alert-message warning</strong> text.</p>
+	    </div>
+	    <div class="alert-message error">
+		    <a class="close" href="#">Å~</a>
+		    <p><strong>alert-message error</strong> text.</p>
+	    </div>
+	    <div class="alert-message info">
+		    <a class="close" href="#">Å~</a>
+		    <p><strong>alert-message info</strong> text.</p>
+	    </div>
+	    <div class="alert-message success">
+		    <a class="close" href="#">Å~</a>
+		    <p><strong>alert-message success</strong> text.</p>
+	    </div>
+    </div>
+    <div id="footer" style="background-color:#eee;">
+    	<div class="container" style="background-color:#ccc;color:#333;">
+    		<br/><br/><br/><br/>
+    		footer
+    		<br/><br/><br/><br/>
+    	</div>
+    </div>
+    <div class="sidenav">
+    	<a href="#"><img src="img/totop.png"></a>
+    </div>
+</body>
+</html>
